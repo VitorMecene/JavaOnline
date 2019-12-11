@@ -12,7 +12,7 @@ public class ImprimindoVariaveis {
      * @param args
      */
     public static void main(String[] args){
-        int idadeDosPaisParaCadastro = 10;
+        int idadeDosPaisParaCadastro = 51;
         System.out.println("A idade e: "+idadeDosPaisParaCadastro);
     }
 }
