@@ -13,6 +13,14 @@ public class ImprimindoVariaveis {
      */
     public static void main(String[] args){
         int idadeDosPaisParaCadastro = 51;
-        System.out.println("A idade e: "+idadeDosPaisParaCadastro);
+        double salarioDouble = 1000;
+        float salarioFloat = 1000;
+        byte idadeByte = 12;
+        short idadeShort = 32767;
+        boolean idadeBoolean = false;
+        long numeroGrande = 1000L;
+        char caractere = '\u0041'; // 2 bytes
+        String nome = "Vitor";
+        System.out.println(idadeDosPaisParaCadastro);
     }
 }
