@@ -1,3 +1,5 @@
+package br.com.abc.introcucao;
+
 public class DeclaraçãoTrabalhista {
     public static void main (String[] args) {
         String nome  = "Pedro";

@@ -1,3 +1,5 @@
+package br.com.abc.introcucao.controlefluxo;
+
 public class ExercicioControleDeFluxo1 {
     public static void main(String[] args) {
         double salario = 1000d;

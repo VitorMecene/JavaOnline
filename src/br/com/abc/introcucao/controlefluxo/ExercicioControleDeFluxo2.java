@@ -1,3 +1,5 @@
+package br.com.abc.introcucao.controlefluxo;
+
 public class ExercicioControleDeFluxo2 {
     public static void main(String[] args) {
         byte dia = 4;

@@ -1,3 +1,5 @@
+package br.com.abc.introcucao;
+
 public class VerificarNome {
     public static void main (String[] args){
         String nome = "Vitor";

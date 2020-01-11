@@ -1,3 +1,5 @@
+package br.com.abc.introcucao.arrays;
+
 public class Arrays5 {
     public static void main(String[] args) {
         // Array bidimensional

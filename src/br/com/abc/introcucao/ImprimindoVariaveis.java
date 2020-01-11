@@ -1,3 +1,5 @@
+package br.com.abc.introcucao;
+
 import com.sun.xml.internal.bind.v2.runtime.output.StAXExStreamWriterOutput;
 
 public class ImprimindoVariaveis {

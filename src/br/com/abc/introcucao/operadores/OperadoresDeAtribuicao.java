@@ -1,3 +1,5 @@
+package br.com.abc.introcucao.operadores;
+
 public class OperadoresDeAtribuicao {
     public static void main(String[] args) {
         // =, -=, +=, *=, /=, %=
