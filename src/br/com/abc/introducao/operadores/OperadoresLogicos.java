@@ -1,4 +1,4 @@
-package br.com.abc.introcucao.operadores;
+package br.com.abc.introducao.operadores;
 
 public class OperadoresLogicos {
     public static void main(String[] args){

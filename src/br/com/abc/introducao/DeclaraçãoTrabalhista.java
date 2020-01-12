@@ -1,4 +1,4 @@
-package br.com.abc.introcucao;
+package br.com.abc.introducao;
 
 public class DeclaraçãoTrabalhista {
     public static void main (String[] args) {

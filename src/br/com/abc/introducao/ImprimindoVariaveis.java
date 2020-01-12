@@ -1,6 +1,4 @@
-package br.com.abc.introcucao;
-
-import com.sun.xml.internal.bind.v2.runtime.output.StAXExStreamWriterOutput;
+package br.com.abc.introducao;
 
 public class ImprimindoVariaveis {
     // conmentários

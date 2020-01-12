@@ -1,4 +1,4 @@
-package br.com.abc.introcucao;
+package br.com.abc.introducao;
 
 public class VerificarNome {
     public static void main (String[] args){
