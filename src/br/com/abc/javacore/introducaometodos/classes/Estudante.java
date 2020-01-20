@@ -2,16 +2,23 @@ package br.com.abc.javacore.introducaometodos.classes;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
+// COESÃO: Alta coesão significa que a classe é mais especifica
+
+// ACOPLAMENTO: é o quanto uma classe ta relacionada com a outra. Quanto menos melhor,
+// pois qualquer alteração que for feita em uma não impactará na outra
+
+// ENCAPSULAMENTO: Criar metodos de acesso para proteger o codigo
+
 public class Estudante {
-    public String nome;
-    public int idade;
-    public double[] notas;
+    private String nome;
+    private int idade;
+    private double[] notas;
 
     public void print(){
         System.out.println("Nome:" +this.nome);
-        System.out.println("Nome:" +this.idade);
-        if(notas != null) {
-            for (double nota : notas) {
+        System.out.println("Idade:" +this.idade);
+        if(this.notas != null) {
+            for (double nota : this.notas) {
                 System.out.print(nota + " ");
             }
         }
@@ -19,23 +26,47 @@ public class Estudante {
     }
 
     public void tirarMedia(){
-        if(notas == null){
+        if(this.notas == null){
             System.out.println("\nEsse aluno não tem notas");
             return;
         }
 
         double media = 0;
 
-            for (double nota : notas) {
+            for (double nota : this.notas) {
                 media += nota;
             }
 
-        media = media / notas.length;
+        media = media / this.notas.length;
 
         if (media > 6){
             System.out.println("aprovado");
         } else {
             System.out.println("reprovado");
         }
+    }
+
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+
+    public void setIdade(int idade){
+        this.idade = idade;
+    }
+
+    public void setNotas(double[] notas){
+        this.notas = notas;
+    }
+
+    public String getNome(){
+        return this.nome;
+    }
+
+    public int getIdade(){
+        return this.idade;
+    }
+
+    public double[] getNotas(){
+        return this.notas;
     }
 }
