@@ -13,6 +13,7 @@ public class Estudante {
     private String nome;
     private int idade;
     private double[] notas;
+    private boolean aprovado;
 
     public void print(){
         System.out.println("Nome:" +this.nome);
@@ -40,8 +41,10 @@ public class Estudante {
         media = media / this.notas.length;
 
         if (media > 6){
+            this.aprovado = true;
             System.out.println("aprovado");
         } else {
+            this.aprovado = false;
             System.out.println("reprovado");
         }
     }
@@ -58,6 +61,11 @@ public class Estudante {
         this.notas = notas;
     }
 
+    /* Isso permite que a situação de aprovado eu reprovada seja modificada.
+    public void setAprovado(boolean aprovado) {
+        this.aprovado = aprovado;
+    }
+    */
     public String getNome(){
         return this.nome;
     }
@@ -68,5 +76,9 @@ public class Estudante {
 
     public double[] getNotas(){
         return this.notas;
+    }
+
+    public boolean isAprovado(){
+        return this.aprovado;
     }
 }
