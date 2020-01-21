@@ -3,7 +3,7 @@ package br.com.abc.javacore.modificadorestatico.classes;
 public class Carro {
     private String nome;
     private double velocidadeMaxima;
-    public static double velocidadeLimite = 240;
+    private static double velocidadeLimite = 240;
 
     // o atributo staticos torna a variavel pertencente a classe
 
@@ -38,11 +38,11 @@ public class Carro {
         this.velocidadeMaxima = velocidadeMaxima;
     }
 
-    public double getVelocidadeLimite() {
+    public static double getVelocidadeLimite() {
         return velocidadeLimite;
     }
 
-    public void setVelocidadeLimite(double velocidadeLimite) {
-        this.velocidadeLimite = velocidadeLimite;
+    public static void setVelocidadeLimite(double velocidadeLimite) {
+        Carro.velocidadeLimite = velocidadeLimite;
     }
 }
