@@ -17,10 +17,14 @@ public class Professor {
         System.out.println("-------------- Relatório de Professor --------------");
         System.out.println("Nome do professor: "+this.nome);
         System.out.println("Especialidade do professor: "+this.especialidade);
-        System.out.println("Seminarios participantes:");
-        for (Seminario sem : seminarios) {
-            System.out.println(sem.getTitulo());
+        if(seminarios != null && seminarios.length !=0){
+            System.out.println("Seminarios participantes:");
+            for (Seminario sem : seminarios) {
+                System.out.println(sem.getTitulo());
+            }
+            return;
         }
+        System.out.println("Professor não vinculado a nenhum seminario");
     }
 
     public Seminario[] getSeminarios() {

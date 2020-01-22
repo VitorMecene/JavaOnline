@@ -17,14 +17,14 @@ public class Aluno {
         System.out.println("-------------- Relatório de Alunos --------------");
         System.out.println("Nome: "+this.nome);
         System.out.println("Idade: "+this.idade);
-        if (this.seminario != null){
+        if (this.seminario != null)
             System.out.println("Seminario Inscrito: "+this.seminario.getTitulo());
-        }else{
+        else
             System.out.println("Aluno não tem seminario");
-        }
-
-
     }
+
+
+
 
     public Seminario getSeminario() {
         return seminario;
