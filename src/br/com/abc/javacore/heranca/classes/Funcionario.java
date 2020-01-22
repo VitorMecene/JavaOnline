@@ -3,8 +3,21 @@ package br.com.abc.javacore.heranca.classes;
 public class Funcionario extends Pessoa {
     private double salario;
 
+    static {
+        System.out.println("Bloco static de funcionario");
+    }
+
+    {
+        System.out.println("Bloco padrão 1 de funcionario");
+    }
+
+    {
+        System.out.println("Bloco padrão 2 de funcionario");
+    }
+
     public Funcionario(String nome){
         super(nome);
+        System.out.println("Dentro do contrutor funcionario");
     }
 
     public void imprime(){

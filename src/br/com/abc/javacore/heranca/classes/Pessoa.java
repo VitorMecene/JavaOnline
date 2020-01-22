@@ -5,7 +5,20 @@ public class Pessoa {
     protected String cpf;
     protected Endereco endereco;
 
+    static {
+        System.out.println("Bloco static de pessoa");
+    }
+
+    {
+        System.out.println("Bloco padrão 1 de pessoa");
+    }
+
+    {
+        System.out.println("Bloco padrão 2 de pessoa");
+    }
+
     public Pessoa(String nome){
+        System.out.println("Dentro do contrutor pessoa");
         this.nome = nome;
     }
 
