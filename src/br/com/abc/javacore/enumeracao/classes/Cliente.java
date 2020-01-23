@@ -3,20 +3,37 @@ package br.com.abc.javacore.enumeracao.classes;
 import br.com.abc.javacore.enumeracao.TipoCliente;
 
 public class Cliente {
-    private String nome;
-    private TipoCliente tipo;
 
-    public Cliente(String nome, TipoCliente tipo) {
+    public enum TipoPagamento{
+        AVISTA, APRAZO
+    }
+
+    private String nome;
+    private TipoCliente tipoCli;
+    private TipoPagamento tipoPag;
+
+    public Cliente(String nome, TipoCliente tipo, TipoPagamento tipoPag) {
         this.nome = nome;
-        this.tipo = tipo;
+        this.tipoCli = tipo;
+        this.tipoPag = tipoPag;
     }
 
     @Override
     public String toString() {
         return "Cliente{" +
                 "nome='" + nome + '\'' +
-                ", tipo=" + tipo +
+                ", tipo=" + tipoCli.getNome() +
+                ", tipoPag=" + tipoPag +
+                ", numero="+ tipoCli.getTipo() +
                 '}';
+    }
+
+    public TipoPagamento getTipoPag() {
+        return tipoPag;
+    }
+
+    public void setTipoPag(TipoPagamento tipoPag) {
+        this.tipoPag = tipoPag;
     }
 
     public String getNome() {
@@ -27,11 +44,11 @@ public class Cliente {
         this.nome = nome;
     }
 
-    public TipoCliente getTipo() {
-        return tipo;
+    public TipoCliente getTipoCli() {
+        return tipoCli;
     }
 
-    public void setTipo(TipoCliente tipo) {
-        this.tipo = tipo;
+    public void setTipoCli(TipoCliente tipoCli) {
+        this.tipoCli = tipoCli;
     }
 }
