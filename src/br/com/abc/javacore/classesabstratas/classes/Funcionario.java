@@ -1,7 +1,6 @@
 package br.com.abc.javacore.classesabstratas.classes;
 
-public abstract class Funcionario {
-    protected String nome;
+public abstract class Funcionario extends Pessoa {
     protected String clt;
     protected double salario;
 
@@ -23,15 +22,14 @@ public abstract class Funcionario {
                 '}';
     }
 
+    // sobrescrever um metodo abstrato em uma classe abstrata faz com que não seja
+    // obrigatório sobrescrever este metodo na proxima classe "concreta"
+    @Override
+    public void imprime() {
+
+    }
+
     public abstract void calculaSalario();
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
 
     public String getClt() {
         return clt;

@@ -16,6 +16,13 @@ public class Vendedor extends Funcionario {
         this.salario = salario + (totalVendas * 0.05);
     }
 
+    // caso o metodo abstrato não seja sobrescrito em outra classe abstrata,
+    // por tanto é obrigatorio que ele seja sobrescrito na proxima classe "concreta"
+    @Override
+    public void imprime() {
+
+    }
+
     public double getTotalVendas() {
         return totalVendas;
     }
@@ -23,4 +30,6 @@ public class Vendedor extends Funcionario {
     public void setTotalVendas(double totalVendas) {
         this.totalVendas = totalVendas;
     }
+
+
 }
