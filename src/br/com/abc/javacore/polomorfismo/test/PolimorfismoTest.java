@@ -16,13 +16,8 @@ public class PolimorfismoTest {
 //        relatorio.relatorioPagamentoVendedor(v);
 
         RelatorioPagamento relatorio = new RelatorioPagamento();
+
         relatorio.relatorioPagamentoGenerico(g);
         relatorio.relatorioPagamentoGenerico(v);
-
-        // Uma variavel mais generica fazer referencia a uma variavel mais especifica
-
-        Funcionario f = g;
-        System.out.println("---------------------------");
-        System.out.println(f.getSalario());
     }
 }
