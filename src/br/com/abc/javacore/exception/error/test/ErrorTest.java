@@ -1,4 +1,4 @@
-package br.com.abc.javacore.exception.test;
+package br.com.abc.javacore.exception.error.test;
 
 public class ErrorTest {
 
@@ -25,5 +25,10 @@ public class ErrorTest {
         stackOverflowError();
     }
 
-    // stack:
+    // CHECKED -> Exceções que será obrigatório a criação de algum tipo de tratamento para aquela exceção
+    // Exceções de tipo "Exception" e filhas do tipo "Exception" são consideradas CHECKED
+
+    // UNCHECKED -> Exceções que não necessita de criação de tratamento
+    // Exceções de tipo "RuntimeException" e filhas do tipo "RuntimeException" são consideradas UNCHECKED
+
 }
