@@ -30,5 +30,15 @@ public class RuntimeexceptionTest {
         System.out.println(a[2]);
 
 */
+
+        try{
+            int[] a = new int[2];
+            System.out.println(a[2]);
+            System.out.println("imprimindo depois da possivel execao");
+        }catch (RuntimeException e){
+            e.printStackTrace();
+        }
+
+        System.out.println("Fora do bloco catch");
     }
 }
