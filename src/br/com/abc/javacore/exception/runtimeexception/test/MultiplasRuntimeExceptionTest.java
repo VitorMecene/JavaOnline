@@ -20,9 +20,7 @@ public class MultiplasRuntimeExceptionTest {
 
         try{
             talvezLanceExeception();
-        }catch (SQLException e){
-
-        }catch (IOException e){
+        }catch (SQLException | IOException e){
 
         }
     }
